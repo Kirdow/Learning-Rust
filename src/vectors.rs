@@ -8,6 +8,13 @@ pub fn run() {
     // Re-assign value
     numbers[2] = 20;
 
+    // Add on top vector
+    numbers.push(6);
+    numbers.push(7);
+
+    // Pop off last value
+    numbers.pop();
+
     println!("{:?}", numbers);
 
     // Get single val
