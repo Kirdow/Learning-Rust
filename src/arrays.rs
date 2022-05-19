@@ -20,6 +20,6 @@ pub fn run() {
     println!("Array occupies {} bytes", mem::size_of_val(&numbers));
 
     // Get Slice
-    let slice: &[i32] = &numbers;
+    let slice: &[i32] = &numbers[0..2];
     println!("Slice: {:?}", slice);
 }
