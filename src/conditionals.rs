@@ -14,4 +14,8 @@ pub fn run() {
     } else {
         println!("Bartender: I'll need to see your ID");
     }
+
+    // Shorthand If
+    let is_of_age = if age >= LEGAL_AGE { true } else { false };
+    println!("Is of age: {}", is_of_age);
 }
