@@ -1,3 +1,5 @@
 /target
 .vscode/**
 !.vscode/launch.json
+*.lock
+*.rs.bk
