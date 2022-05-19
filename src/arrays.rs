@@ -10,4 +10,7 @@ pub fn run() {
 
     // Get single val
     println!("Single Value: {}", numbers[0]);
+
+    // Get array length
+    println!("Array Length: {}", numbers.len());
 }
