@@ -14,6 +14,7 @@ pub fn run() {
 fn exec(cmd: String) {
     let result = match cmd.as_str() {
         "hello" => "Well hello there!",
+        "status" => "Status check, clear!",
         _ => "Sorry, who are you?"
     };
 
