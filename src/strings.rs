@@ -39,6 +39,11 @@ pub fn run() {
     // Replace
     println!("Replace: {}", hello.replace("World", "People"));
 
+    // Loop through string by whitespace
+    for word in hello.split_whitespace() {
+        println!("{}", word);
+    }
+
     println!("Mutable String [hello] = {}", hello);
 
     // Get length (again)
