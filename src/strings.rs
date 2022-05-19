@@ -15,8 +15,10 @@ pub fn run() {
     // Get length
     println!("Length: {}", hello.len());
 
-    // Push more to string
+    // Push string
     hello.push_str(", World");
+
+    // Push char
     hello.push('!');
 
     println!("Mutable String [hello] = {}", hello);
