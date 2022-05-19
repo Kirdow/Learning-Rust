@@ -31,4 +31,11 @@ pub fn run() {
         // Inc
         count += 1
     }
+
+    // For Range
+    for x in 0..100 {
+        if x % 7 == 2 {
+            println!("{}", x);
+        }
+    }
 }
