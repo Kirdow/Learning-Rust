@@ -10,6 +10,9 @@ pub fn run() {
     // Mutable str
     let mut hello = String::from("Hello");
 
+    // Print capacity in bytes
+    println!("Capacity: {}", hello.capacity());
+
     println!("Mutable String [hello] = {}", hello);
 
     // Get length
@@ -18,8 +21,14 @@ pub fn run() {
     // Push string
     hello.push_str(", World");
 
+    // Print capacity again
+    println!("Capacity: {}", hello.capacity());
+
     // Push char
     hello.push('!');
+
+    // Print capacity one more time
+    println!("Capacity: {}", hello.capacity());
 
     println!("Mutable String [hello] = {}", hello);
 
