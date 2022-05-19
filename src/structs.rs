@@ -20,7 +20,12 @@ pub fn run() {
 
     println!("Color: {} {} {}", c.red, c.green, c.blue);
 
-    let tc = TColor(255, 0, 0);
+    let mut tc = TColor(255, 0, 0);
+
+    println!("TColor: {} {} {}", tc.0, tc.1, tc.2);
+
+    tc.2 = 255;
+    tc.0 = 120;
 
     println!("TColor: {} {} {}", tc.0, tc.1, tc.2);
 }
