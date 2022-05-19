@@ -8,10 +8,20 @@ pub fn run() {
     println!("Primitive [my_str] = {}", my_str);
 
     // Mutable str
-    let hello = String::from("Hello");
+    let mut hello = String::from("Hello");
 
     println!("Mutable String [hello] = {}", hello);
 
     // Get length
     println!("Length: {}", hello.len());
+
+    // Push more to string
+    hello.push_str(", World");
+    hello.push('!');
+
+    println!("Mutable String [hello] = {}", hello);
+
+    // Get length (again)
+    println!("Length: {}", hello.len());
+    
 }
