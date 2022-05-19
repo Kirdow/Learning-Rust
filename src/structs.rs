@@ -10,6 +10,19 @@ struct Color {
 // Tuple Struct
 struct TColor(u8, u8, u8);
 
+// Struct with functions
+struct Person {
+    first_name: String,
+    last_name: String
+}
+
+impl Person {
+    // Construct person
+    fn new(first: &str, last: &str) -> Person {
+        Person { first_name: first.to_string(), last_name: last.to_string() }
+    }
+}
+
 pub fn run() {
     let mut c = Color { red: 255, green: 0, blue: 0 };
 
@@ -28,4 +41,7 @@ pub fn run() {
     tc.0 = 120;
 
     println!("TColor: {} {} {}", tc.0, tc.1, tc.2);
+
+    let person = Person::new("John", "Doe");
+    println!("Person {} {}", person.first_name, person.last_name);
 }
