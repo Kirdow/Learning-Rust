@@ -30,6 +30,15 @@ pub fn run() {
     // Print capacity one more time
     println!("Capacity: {}", hello.capacity());
 
+    // Is empty?
+    println!("Is Empty: {}", hello.is_empty());
+
+    // Contains
+    println!("Contains 'World': {}", hello.contains("World"));
+
+    // Replace
+    println!("Replace: {}", hello.replace("World", "People"));
+
     println!("Mutable String [hello] = {}", hello);
 
     // Get length (again)
