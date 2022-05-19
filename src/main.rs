@@ -1,5 +1,5 @@
-mod structs;
+mod cli;
 
 fn main() {
-    structs::run();
+    cli::run();
 }
