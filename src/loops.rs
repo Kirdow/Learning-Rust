@@ -12,4 +12,23 @@ pub fn run() {
             break;
         }
     }
+
+    // reset count
+    count = 1;
+
+    // While Loop (FizzBuzz)
+    while count <= 100 {
+        if count % 15 == 0 {
+            println!("FizzBuzz");
+        } else if count % 3 == 0 {
+            println!("Fizz");
+        } else if count % 5 == 0 {
+            println!("Buzz");
+        } else {
+            println!("{}", count);
+        }
+
+        // Inc
+        count += 1
+    }
 }
