@@ -1,4 +1,4 @@
-pub fn basic_math() {
+pub fn run() {
     // Basic math
     println!("10 + 10 = {}", 10 + 10);
 }

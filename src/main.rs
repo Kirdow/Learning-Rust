@@ -1,5 +1,5 @@
-mod print;
+mod math;
 
 fn main() {
-    print::run();
+    math::run();
 }
