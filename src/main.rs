@@ -1,5 +1,5 @@
-mod math;
+mod vars;
 
 fn main() {
-    math::run();
+    vars::run();
 }
