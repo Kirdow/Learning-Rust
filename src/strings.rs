@@ -48,5 +48,12 @@ pub fn run() {
 
     // Get length (again)
     println!("Length: {}", hello.len());
+
+    // Create string with capacity
+    let mut s = String::with_capacity(10);
+    s.push('a');
+    s.push('b');
+
+    println!("{} ({} len, {} capacity)", s, s.len(), s.capacity());
     
 }
